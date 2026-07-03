@@ -63,16 +63,16 @@ theme = 'PaperMod'
     imageHeight = 120
     [[params.profileMode.buttons]]
       name = '文章'
-      url = '/posts/'
+      url = 'posts/'
     [[params.profileMode.buttons]]
       name = '归档'
-      url = '/archives/'
+      url = 'archives/'
     [[params.profileMode.buttons]]
       name = '标签'
-      url = '/tags/'
+      url = 'tags/'
     [[params.profileMode.buttons]]
       name = '关于'
-      url = '/about/'
+      url = 'about/'
     [[params.profileMode.buttons]]
       name = 'GitHub'
       url = 'https://github.com/shinohoshi'
