@@ -1,0 +1,72 @@
+baseURL = 'https://shinohoshi.github.io/physics-notes/'
+languageCode = 'zh-cn'
+title = 'Physics Learning Notes'
+theme = 'PaperMod'
+
+# 代码高亮
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+    noClasses = false
+
+# 目录设置
+[tableOfContents]
+  ordered = false
+  startLevel = 2
+  endLevel = 4
+
+[params]
+  # 全局启用数学公式 (LaTeX)
+  math = true
+
+  # 首页显示
+  [params.homeInfoParams]
+    title = 'Physics Learning Notes'
+    content = '物理学习笔记 —— 记录思考，分享知识'
+  description = '物理学习笔记 —— 记录思考，分享知识'
+
+  # 作者
+  author = 'Physics Learner'
+
+  # 主题切换 (auto/light/dark)
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+
+  # 显示阅读时间和字数
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = true
+
+  # 日期格式
+  DateFormat = '2006-01-02'
+
+  # 启用搜索
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+# 导航菜单
+[[menu.main]]
+  name = '归档'
+  url = '/archives/'
+  weight = 10
+[[menu.main]]
+  name = '搜索'
+  url = '/search/'
+  weight = 20
+[[menu.main]]
+  name = '标签'
+  url = '/tags/'
+  weight = 30
+[[menu.main]]
+  name = '关于'
+  url = '/about/'
+  weight = 40
