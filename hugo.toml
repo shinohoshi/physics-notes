@@ -19,14 +19,13 @@ theme = 'PaperMod'
   # 全局启用数学公式 (LaTeX)
   math = true
 
-  # 首页显示
-  [params.homeInfoParams]
-    title = 'Physics Learning Notes'
-    content = '物理学习笔记 —— 记录思考，分享知识'
   description = '物理学习笔记 —— 记录思考，分享知识'
+  author = 'shinohoshi'
 
-  # 作者
-  author = 'Physics Learner'
+  # 社交链接
+  [[params.socialIcons]]
+    name = 'GitHub'
+    url = 'https://github.com/shinohoshi'
 
   # 主题切换 (auto/light/dark)
   defaultTheme = 'auto'
@@ -52,6 +51,31 @@ theme = 'PaperMod'
     threshold = 0.4
     minMatchCharLength = 0
     keys = ["title", "permalink", "summary", "content"]
+
+  # 首页 - 个人信息卡模式（放在最后以避免 TOML 解析问题）
+  [params.profileMode]
+    enabled = true
+    title = 'shinohoshi'
+    subtitle = '物理学习者 —— 记录思考，分享知识'
+    imageUrl = '/images/avatar.jpg'
+    imageTitle = 'avatar'
+    imageWidth = 120
+    imageHeight = 120
+    [[params.profileMode.buttons]]
+      name = '文章'
+      url = '/posts/'
+    [[params.profileMode.buttons]]
+      name = '归档'
+      url = '/archives/'
+    [[params.profileMode.buttons]]
+      name = '标签'
+      url = '/tags/'
+    [[params.profileMode.buttons]]
+      name = '关于'
+      url = '/about/'
+    [[params.profileMode.buttons]]
+      name = 'GitHub'
+      url = 'https://github.com/shinohoshi'
 
 # 导航菜单
 [[menu.main]]

@@ -1,0 +1,31 @@
+/* 整站背景图 */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* 加一层半透明遮罩，确保文字可读 */
+  opacity: 0.15;
+}
+
+/* 暗色模式下背景更亮一点 */
+[data-theme="dark"] body::before {
+  opacity: 0.08;
+}
+
+/* 主内容区加一点圆角和半透明 */
+.main {
+  border-radius: 8px;
+}
+
+.post-entry {
+  border-radius: 8px;
+}
