@@ -5,6 +5,8 @@ theme = 'PaperMod'
 
 # 代码高亮
 [markup]
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.highlight]
     style = 'dracula'
     noClasses = false

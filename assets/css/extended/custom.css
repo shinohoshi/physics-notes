@@ -29,3 +29,9 @@ body::before {
 .post-entry {
   border-radius: 8px;
 }
+
+/* 长公式横向滚动 */
+mjx-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
