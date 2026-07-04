@@ -13,19 +13,19 @@ ShowToc = true
 
 $\zeta$ 函数的初始定义为 $$\begin{equation}
      \zeta (s)=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}
-\end{equation}$$ 其中Re(s) \> 1
+\end{equation}$$ 其中 $\operatorname{Re}(s) > 1$
 
 借助$\Gamma$函数 $$\begin{equation*}
     \Gamma(s) = \int_{0}^{\infty} t^{s-1} e^{-t} dt
 \end{equation*}$$ 通过换元$(t=nx)$可以得到$\zeta$函数的积分形式
 $$\begin{equation}
     \zeta (s)={\frac {1}{\Gamma (s)}}\int _{0}^{\infty }{\frac {x^{s-1}}{e^{x}-1}}\mathrm {d} x
-\end{equation}$$ 不过在此定义下，$\zeta$函数仍然被限制在Re(s) \>
+\end{equation}$$ 不过在此定义下，$\zeta$函数仍然被限制在 $\operatorname{Re}(s) >$
 1，如果不这么取，那么在0附近的积分一定会发散
 
 ## $\zeta$ 函数的解析延拓
 
-现在我们的任务是，将原本的定义域Re(s) \>
+现在我们的任务是，将原本的定义域 $\operatorname{Re}(s) >$
 1延拓到全复平面，为此，我们需要一个辅助函数，这个函数是一个在给定围道上的积分,而且他在全复平面上有定义：
 $$\begin{equation}
     I(s) = \int_{C} \frac{z^{s-1}}{e^z - 1} dz
@@ -111,7 +111,7 @@ $$\begin{equation}
     \end{split}
 \end{equation}$$ 因此最终可推出zeta函数的函数方程 $$\begin{equation}
     \begin{split}
-        \zeta(s) &= -\frac{\Gamma(1-s)}{2\pi i} \times \left( \int_{C} \frac{(-z)^{s-1}}{e^z - 1} dz \right)\\&=-\frac{\Gamma(1-s)}{2\pi i} \times \left\{ -2\pi i \left[ 2 \cdot (2\pi)^{s-1} \sin\left(\frac{\pi s}{2}\right) \zeta(1-s) \right] \right\}\\&= 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s)
+        \zeta(s) &= -\frac{\Gamma(1-s)}{2\pi i} \times \left( \int_{C} \frac{(-z)^{s-1}}{e^z - 1} dz \right)\\&=-\frac{\Gamma(1-s)}{2\pi i} \times \left\lbrace -2\pi i \left[ 2 \cdot (2\pi)^{s-1} \sin\left(\frac{\pi s}{2}\right) \zeta(1-s) \right] \right\rbrace\\&= 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s)
     \end{split}
 \end{equation}$$
 
@@ -141,7 +141,7 @@ $$\begin{equation}
 2.  关于求和（民科最爱）
 
     $\zeta$函数最初被定义为Euler对于素数分布猜想时所用到的无穷级数$\zeta (s)=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}$，当然这个无穷级数只在Re(s)
-    \> 1时收敛，但在解析延拓后，我们可以算出一些"匪夷所思"的值
+    $> 1$ 时收敛，但在解析延拓后，我们可以算出一些"匪夷所思"的值
     $$\begin{equation}
             \zeta (-1)=1+2+3+4+5+...=-{\frac {1}{12}}
     \end{equation}$$
@@ -310,7 +310,7 @@ $$\begin{equation}
         \end{split}
     \end{equation}$$ 将这部分放在原式后面可以得到 $$\begin{equation}
         \begin{split}
-       V_{eff}^{(1L)}(\hat{\phi})&= \frac{\hat{\phi}^4}{4!(8\pi^2)} \left\{ \left[ \frac{5\lambda^2}{6} + 9e^4 - \xi e^2 \lambda \right] - \frac{1}{2} \left[ -2\xi e^2\lambda \right] \right\} \ln(\frac{\hat{\phi}^2}{\mu^2})\\&=\frac{\hat{\phi}^4}{64\pi^2} \left[ \frac{5\lambda^2}{18} + 3e^4 \right] \ln(\frac{\hat{\phi}^2}{\mu^2})
+       V_{eff}^{(1L)}(\hat{\phi})&= \frac{\hat{\phi}^4}{4!(8\pi^2)} \left\lbrace \left[ \frac{5\lambda^2}{6} + 9e^4 - \xi e^2 \lambda \right] - \frac{1}{2} \left[ -2\xi e^2\lambda \right] \right\rbrace \ln(\frac{\hat{\phi}^2}{\mu^2})\\&=\frac{\hat{\phi}^4}{64\pi^2} \left[ \frac{5\lambda^2}{18} + 3e^4 \right] \ln(\frac{\hat{\phi}^2}{\mu^2})
         \end{split}
     \end{equation}$$
     虽然我们得到了理想的结果，但计算这个乘法反常太难了。不过这个乘法反常既然是由我们一开始乱拆矩阵带来的，那我们可不可以一开始就不拆？当然可以，这就要用到**Heat
