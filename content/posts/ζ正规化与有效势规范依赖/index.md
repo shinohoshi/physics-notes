@@ -205,10 +205,10 @@ Kernal方法，连一个本征值都不用求。
 \end{equation}$$ 其中 $$\begin{equation}
     i\mathcal{D}_0^{-1} = \begin{pmatrix} iD{ij}^{-1}(\hat{\phi}, k) + iQ_{ij}(\hat{\phi}, k) & 0 \\ 0 & i\Delta_{\mu\nu}^{-1}(\hat{\phi}, k) \end{pmatrix}
 \end{equation}$$ 再通过这个经过对角化的逆传播子矩阵可得到粒子的有效质量
-$$\begin{equation}
+$$\begin{gathered}
     \mathcal{A}_1^2 = \frac{1}{12} (\lambda \hat{\phi}^2 + \hat{\phi}^2 \sqrt{\lambda^2 - 24\xi\lambda e^2}), \quad \mathcal{A}_3^2 = \frac{1}{2} \lambda \hat{\phi}^2,\\
     \mathcal{A}_2^2 = \frac{1}{12} (\lambda \hat{\phi}^2 - \hat{\phi}^2 \sqrt{\lambda^2 - 24\xi\lambda e^2}), \quad \mathcal{A}_4^2 = e^2 \hat{\phi}^2.
-\end{equation}$$ 因此我们的积分就变为 $$\begin{equation}
+\end{gathered}$$ 因此我们的积分就变为 $$\begin{equation}
     V_{1L}^{(4)}(\hat{\phi}) = -\frac{i}{2} \int \frac{d^4 k}{(2\pi)^4} \ln \big[ (k^2 - \mathcal{A}_1^2)(k^2 - \mathcal{A}_2^2) (k^2 - \mathcal{A}_3^2)(k^2 - \mathcal{A}_4^2)^3 \big]
 \end{equation}$$ 通过维度正规化与MS重整化最终获得规范依赖的CW势
 $$\begin{equation}
@@ -394,7 +394,7 @@ $$\begin{equation}
 \end{equation}$$ 它可以被分为三部分 $$\begin{equation}
     \Delta \equiv \frac{\delta^2 \mathcal{L}}{\delta \Phi^2} = D^2 + M^2 + U
 \end{equation}$$ $$\begin{equation}
-    M^2 = \begin{pmatrix} \frac{\lambda}{2}\hat{\phi}^2 \mathbf{\delta_{ab}} & 0 \\ 0 & -e^2\hat{\phi}^2 \mathbf{\delta_{\mu\nu}} \end{pmatrix}
+    M^2 = \begin{pmatrix} \frac{\lambda}{2}\hat{\phi}^2 \delta_{ab} & 0 \\ 0 & -e^2\hat{\phi}^2 \delta_{\mu\nu} \end{pmatrix}
 \end{equation}$$
 把偏导提出来就是势能矩阵，懒得提了。一般来说，这里的质量矩阵与势能矩阵是不对易的，而我们现在要对热核求迹，也就是求$\text{Tr}(e^{-t\Delta})$，因此不能轻易使用指数的运算规律（此时$e^{A+B} \neq e^A e^B$）。那既然$[M^2, U] \neq 0$，我们该怎么算呢？其实只需要一点小变形就可以看出端倪，先设$e^{-t(A + B)} = e^{-tA} \cdot F(t)$
 $$\begin{equation}
@@ -433,7 +433,7 @@ $$\begin{equation}
 \end{equation}$$ 因此 $$\begin{equation}
 \begin{split}
     S_{\text{eff}} &= \int d^4x \ c_s \text{tr} \int_0^\infty \mathbf{\frac{dt}{t}} K(t,x,x,\Delta)\\
-    \mathbf{\mathcal{L}_{\text{eff}} &= c_s \text{tr} \int_0^\infty \frac{dt}{t} K(t,x,x,\Delta)}
+    \mathcal{L}_{\text{eff}} &= c_s \text{tr} \int_0^\infty \frac{dt}{t} K(t,x,x,\Delta)
 \end{split}
 \end{equation}$$ 代入我们刚才计算热核的结果 $$\begin{equation}
     \begin{split}

@@ -30,8 +30,10 @@ body::before {
   border-radius: 8px;
 }
 
-/* 长公式横向滚动 */
-mjx-container {
+/* 长公式横向滚动，不影响居中 */
+.post-content {
   overflow-x: auto;
-  max-width: 100%;
+}
+mjx-container[display="true"] {
+  overflow-x: visible !important;
 }
