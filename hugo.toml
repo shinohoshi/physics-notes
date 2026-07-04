@@ -1,4 +1,4 @@
-baseURL = 'https://shinohoshi.github.io/physics-notes/'
+baseURL = 'https://shinori.netlify.app/'
 languageCode = 'zh-cn'
 title = 'Physics Learning Notes'
 theme = 'PaperMod'
